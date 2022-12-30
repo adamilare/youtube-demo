@@ -27,18 +27,32 @@ body {
   z-index: 1000;
 }
 
-.container {
-  display: flex;
+.wrapper {
   min-height: 100vh;
   background-color: black;
   padding-top: 56px;
 }
 
+.container {
+  display: flex;
+  margin: 20px 30px 0;
+  min-height: calc(100vh - (30px + 56px));
+}
+
 .main-section {
-  flex: 5 1 auto;
+  flex: 2 1 auto;
   background-color: aqua;
+  padding-right: 20px;
 }
 .side-section {
-  flex: 2 1 auto;
+  flex: 1 1 auto;
   background-color: blue;
+}
+
+.main-section > .player {
+  background-color: brown;
+  height: 480px;
+}
+.side-elem {
+  height: 200px;
 }
