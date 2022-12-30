@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  height: 56px;
+  width: 100%;
+  padding: 0 16px;
+  display: flexbox;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: aliceblue;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: black;
+  padding-top: 56px;
+}
+
+.main-section {
+  flex: 5 1 auto;
+  background-color: aqua;
+}
+.side-section {
+  flex: 2 1 auto;
+  background-color: blue;
+}
