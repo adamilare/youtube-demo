@@ -8,22 +8,87 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="topbar"></div>
+    <div class="topbar">
+      <div class="topbar-left"></div>
+      <div class="topbar-center"></div>
+      <div class="topbar-rigth"></div>
+    </div>
     <div class="wrapper">
       <div class="container">
         <div class="main-section">
-          <div class="player">Player</div>
-          <h1>Video Title</h1>
+          <div class="player">
+            <iframe
+              src="https://www.youtube.com/embed/lJIrF4YjHfQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h1 class="yt-title">
+            Video Title goes here, want to make it longer
+          </h1>
           <div class="channel-panel"></div>
           <div class="channel-description"></div>
           <div class="video-comment"></div>
         </div>
         <div class="side-section">
-          <div class="side-elem">1</div>
-          <div class="side-elem">2</div>
-          <div class="side-elem">3</div>
-          <div class="side-elem"></div>
-          <div class="side-elem"></div>
+          <div class="side-elem">
+            <div class="side-thumb">
+              <a
+                class="m_overlay"
+                href="#"
+                data-src="//www.youtube.com/embed/VdphvuyaV_I?wmode=transparent&autoplay=1"
+              >
+                <img
+                  src="https://img.youtube.com/vi/VdphvuyaV_I/hqdefault.jpg"
+                  alt="YouTube Video"
+                />
+              </a>
+            </div>
+            <div class="thumb-details">
+              <h3 class="thumb-title">
+                Thumb title here trying to make it longer than one line. A bit
+                much longer. Not long enough for what I want
+              </h3>
+              <div class="thumb-channel">
+                <div class="yt-name">
+                  <span class="yt-name">Microverse</span>
+                </div>
+                <div class="yt-views">
+                  <span class="yt-view-count">500k</span>
+                  <span class="yt-view-last">. 1 year ago</span>
+                </div>
+                <span class="yt-badge"></span>
+              </div>
+            </div>
+          </div>
+          <div class="side-elem">
+            <div class="side-thumb">
+              <a class="m_overlay" href="#">
+                <img
+                  src="https://img.youtube.com/vi/jSVy-6kQDxY/hqdefault.jpg"
+                  alt="YouTube Video"
+                />
+              </a>
+            </div>
+            <div class="thumb-details">
+              <h3 class="thumb-title">
+                Thumb title here trying to make it longer than one line. A bit
+                much longer. Not long enough for what I want
+              </h3>
+              <div class="thumb-channel">
+                <div class="yt-name">
+                  <span class="yt-name">Microverse</span>
+                </div>
+                <div class="yt-views">
+                  <span class="yt-view-count">500k</span>
+                  <span class="yt-view-last">. 1 year ago</span>
+                </div>
+                <span class="yt-badge"></span>
+              </div>
+            </div>
+          </div>
           <div class="side-elem"></div>
           <div class="side-elem"></div>
           <div class="side-elem"></div>

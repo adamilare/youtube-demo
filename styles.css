@@ -29,7 +29,7 @@ body {
 
 .wrapper {
   min-height: 100vh;
-  background-color: black;
+  /* background-color: black; */
   padding-top: 56px;
 }
 
@@ -41,18 +41,107 @@ body {
 
 .main-section {
   flex: 2 1 auto;
-  background-color: aqua;
+  /* background-color: aqua; */
   padding-right: 20px;
 }
 .side-section {
+  width: 23%;
   flex: 1 1 auto;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
-.main-section > .player {
+.player {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
   background-color: brown;
-  height: 480px;
+  overflow: hidden;
+}
+
+.player::before {
+  padding-top: 56.25%;
+  display: block;
+  content: "";
+  box-sizing: border-box;
+}
+
+.player iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+h1.yt-title {
+  word-break: break-word;
+  font-family: "YouTube Sans", "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 2.8rem;
+  font-weight: 500;
+  overflow: hidden;
+  display: block;
+  max-height: 5.6rem;
+  white-space: normal;
+  margin: 0;
+  padding: 0;
+  color: rgb(15 15 15);
+  text-size-adjust: 100%;
 }
 .side-elem {
-  height: 200px;
+  margin-top: 10px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.side-elem > .side-thumb {
+  width: 200px;
+  margin-right: 10px;
+}
+.side-elem img {
+  width: 168px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.side-elem .thumb-details {
+  width: 100%;
+  height: auto;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+}
+
+h3.thumb-title {
+  margin: 0 !important;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: 500;
+  overflow: hidden;
+  display: block;
+  max-height: 2.4rem;
+  -webkit-line-clamp: 2;
+  display: box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.side-thumb .thumb-channel {
+  display: flex;
+  flex-direction: column;
+}
+.side-elem .thumb-channel .yt-name {
+  display: flex;
+  flex-direction: row;
+}
+.side-elem .thumb-channel .yt-views {
+  display: flex;
+  flex-direction: row;
 }
